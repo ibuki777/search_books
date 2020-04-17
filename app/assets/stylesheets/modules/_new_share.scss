@@ -1,0 +1,70 @@
+.share{
+  background-color: #ffffad;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  &__books{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    color: #32cd3e;
+  }
+  .field{
+    width: 100%;
+    padding: 0 100px;
+    .label{
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 5px;
+      .share__name{
+        color: #32cd3e;
+      }
+    }
+    .field__image{
+      font-size: 11px;
+      color: #888888;
+    }
+    .name__text{
+      height: 30px;
+      width: 100%;
+      padding: 5px;
+      margin: 10px 0 15px;
+      font-size: 13px;
+    }
+    .explain__text{
+      height: 100px;
+      width: 100%;
+      font-size: 14px;
+      padding: 7px;
+      margin: 10px 0 15px;
+    }
+    .image__file{
+      margin: 10px 0 15px;
+      display: block;
+    }
+    .genre__hash{
+      width: 100%;
+      margin: 10px 0 15px;
+    }
+  }
+  .border{
+    border-bottom: 1px solid #32cd3e;
+  }
+  .submit{
+    height: 48px;
+    width: 100%;
+    position: relative;
+
+    .execute{
+      height: 85%;
+      width: 13%;
+      position: absolute;
+      bottom: 0px;
+      top: 7px;
+      left: 0px;
+      right: 0px;
+      margin: 0 auto;
+      color: #32cd3e;
+    }
+  }
+}

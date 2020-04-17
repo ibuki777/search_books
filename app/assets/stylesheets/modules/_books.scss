@@ -1,0 +1,89 @@
+.contents{
+  background-color: #ffffad;
+  height: 100%;
+  width: 100%;
+  &__header{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    &__menu{
+      height: 100%;
+      width: 15%;
+      text-align: center;
+      &--share{
+        background-color: #32cd3e;
+        cursor: pointer;
+        height: 18%;
+        width: 52%;
+        margin-top: 10px;
+        &:hover{
+          opacity: 0.6;
+        }
+      }
+      &__bar{
+        height: 25%;
+        width: 50%;
+        margin: 10px auto 0;
+      }
+    }
+    &__images{
+      height: 100%;
+      width: 50%;
+      margin-left: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__title{
+    background-color: #32cd3e;
+    height: 33%;
+    width: 100%;
+    &__box{
+      height: 100%;
+      width: 40%;
+      margin: 0 auto;
+      padding-top: 3%;
+      text-align: center;
+      &__letter1{
+        font-size: 35px;
+        font-weight: bold;
+        color: #ffffad;
+      }
+      &__letter2{
+        font-size: 35px;
+        font-weight: bold;
+        color: #ffffad;
+      }
+    }
+  }
+  &--new{
+    height: 27%;
+    width: 100%;
+    &__books{
+      height: 100%;
+      width: 70%;
+      margin: 0 auto;
+      &__label{
+        text-align: center;
+        font-size: 25px;
+        color: #ffffad;
+        background-color: #32cd3e;
+        border-top: 1px solid;
+      }
+      &__feild{
+        height: 75%;
+        border-right: 10px solid #32cd3e;
+        border-left: 10px solid #32cd3e;
+        .books{
+          height: 115px;
+          width: 266px;
+          &__image{
+            height: 100%;
+            width: 160px;
+          }
+        }
+      }
+    }
+  }
+}

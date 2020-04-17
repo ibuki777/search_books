@@ -1,0 +1,25 @@
+.contents
+  .contents__header
+    .contents__header__menu
+      %button.contents__header__menu--share{:onclick => "location.href='/books/new'", :type => "button"} 本をシェアする
+      .contents__header__menu__bar
+    .contents__header__images
+      = image_tag 'materials/book001.png', height: '80%', width: '26%'
+  .contents__title
+    .contents__title__box
+      .contents__title__box__letter1
+        人生を変える本に
+      .contents__title__box__letter2
+        出会いに行こう
+  .contents--new
+    .contents--new__books
+      .contents--new__books__label
+        新着タイトル
+      .contents--new__books__feild
+        -@books.each do |book|
+          .books
+            .books__image
+              %div{:style => "background-image: url(#{book.image});"}
+            -# .books__box
+            -#   .books__box
+            -#   .books__box

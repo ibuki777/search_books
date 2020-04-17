@@ -1,0 +1,30 @@
+.wrapper
+  .share
+    .share__books
+      何の本をシェアしますか
+    .border
+    = form_with model: @book, local: true do |f|
+      .field
+        .label
+          = f.label :name, '本のタイトル', class: 'share__name'
+        = f.text_field :name, class: 'name__text', placeholder: '本のタイトルを入れて下さい'
+      .border
+      .field
+        .label
+          = f.label :explain, '本の説明', class: 'share__name'
+        = f.text_area :explain, class: 'explain__text', placeholder: '興味を引く様な説明を書いてみましょう                                              ※ネタバレ禁止'
+      .border
+      .field
+        .label
+          = f.label :image, '本の画像', class: 'share__name'
+        .field__image
+          ⚠︎画像は任意です
+          = f.file_field :image, class: 'image__file'
+      .border
+      .field
+        .label
+          = f.label :genre, '本のジャンル', class: 'share__name'
+        = f.text_field :genre, class: 'genre__hash', placeholder: 'ActiveHashで選択してもらう'
+      .border
+      .submit
+        = f.submit 'シェア', class: 'execute'
