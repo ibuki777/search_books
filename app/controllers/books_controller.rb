@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :destroy]
+  before_action :return_root, only: [:index, :show]
 
   def index
     @book = Book.all
@@ -35,5 +36,9 @@ class BooksController < ApplicationController
 
   def set_book
     @book = Book.find(params[:id])
+  end
+
+  def return_root
+    redirect_to action: :index unless user_signed_in?
   end
 end
