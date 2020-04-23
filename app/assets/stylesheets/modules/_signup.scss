@@ -1,0 +1,58 @@
+.box{
+  background-color: $subColor;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  padding: 70px 0;
+  position: relative;
+  &--signup{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    color: $mainColor;
+  }
+  .border{
+    border-bottom: 1px solid $mainColor;
+  }
+  .field{
+    width: 100%;
+    padding: 0 100px;
+    .title{
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 5px;
+      color: $mainColor;
+    }
+    .enter{
+      height: 30px;
+      width: 100%;
+      padding: 5px;
+      margin: 10px 0 15px;
+      font-size: 13px;
+    }
+  }
+  .actions{
+    height: 48px;
+    width: 100%;
+    position: relative;
+    .btn{
+      height: 102%;
+      width: 15%;
+      position: absolute;
+      top: 54px;
+      right: 145px;
+      color: $mainColor;
+      border: solid 1px gray;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: $mainColor;
+    border: solid 1px gray;
+    background-color: #ffffff;
+    padding: 12px 13px;
+    position: absolute;
+    bottom: 55px;
+    left: 145px;
+  }
+}
