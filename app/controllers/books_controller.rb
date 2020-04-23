@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :destroy]
-  before_action :return_root, only: [:index, :show]
+  before_action :return_root, except: [:index]
 
   def index
     @book = Book.all
