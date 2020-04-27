@@ -2,7 +2,7 @@
   .contents__header
     .contents__header__menu
       -if user_signed_in?
-        %button.contents__header__menu--btn{:onclick => "location.href='/books/new'", :type => "button"} ログアウト
+        %button.contents__header__menu--btn{:onclick => "location.href='/users/sign_out'", :type => "button"} ログアウト
         %button.contents__header__menu--btn{:onclick => "location.href='/books/new'", :type => "button"} 本をシェア
       -else
         %button.contents__header__menu--btn{:onclick => "location.href='/users/sign_in'", :type => "button"} ログイン
