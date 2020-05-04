@@ -1,9 +1,12 @@
 .contents
   .contents__header
     .contents__header__menu
-      %button.contents__header__menu--share{:onclick => "location.href='/books/new'", :type => "button"} 新規登録
-      %button.contents__header__menu--share{:onclick => "location.href='/books/new'", :type => "button"} ログイン
-      %button.contents__header__menu--share{:onclick => "location.href='/books/new'", :type => "button"} 本をシェア
+      -if user_signed_in?
+        %button.contents__header__menu--btn{:onclick => "location.href='/users/sign_out'", :type => "button"} ログアウト
+        %button.contents__header__menu--btn{:onclick => "location.href='/books/new'", :type => "button"} 本をシェア
+      -else
+        %button.contents__header__menu--btn{:onclick => "location.href='/users/sign_in'", :type => "button"} ログイン
+        %button.contents__header__menu--btn{:onclick => "location.href='/users/sign_up'", :type => "button"} 新規登録
       .contents__header__menu__bar
     .contents__header__images
       = image_tag 'materials/book001.png', height: '80%', width: '26%'

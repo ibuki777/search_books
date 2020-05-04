@@ -1,5 +1,5 @@
 .contents{
-  background-color: #ffffad;
+  background-color: $subColor;
   height: 100%;
   width: 100%;
   &__header{
@@ -10,11 +10,11 @@
       height: 100%;
       width: 15%;
       text-align: center;
-      &--share{
-        background-color: #32cd3e;
+      &--btn{
+        background-color: $mainColor;
         cursor: pointer;
         height: 18%;
-        width: 52%;
+        width: 57%;
         margin-top: 10px;
         &:hover{
           opacity: 0.6;
@@ -36,7 +36,7 @@
     }
   }
   &__title{
-    background-color: #32cd3e;
+    background-color: $mainColor;
     height: 33%;
     width: 100%;
     &__box{
@@ -48,12 +48,12 @@
       &__letter1{
         font-size: 35px;
         font-weight: bold;
-        color: #ffffad;
+        color: $subColor;
       }
       &__letter2{
         font-size: 35px;
         font-weight: bold;
-        color: #ffffad;
+        color: $subColor;
       }
     }
   }
@@ -67,14 +67,14 @@
       &__label{
         text-align: center;
         font-size: 25px;
-        color: #ffffad;
-        background-color: #32cd3e;
+        color: $subColor;
+        background-color: $mainColor;
         border-top: 1px solid;
       }
       &__feild{
         height: 75%;
-        border-right: 10px solid #32cd3e;
-        border-left: 10px solid #32cd3e;
+        border-right: 10px solid $mainColor;
+        border-left: 10px solid $mainColor;
         .books{
           height: 115px;
           width: 266px;

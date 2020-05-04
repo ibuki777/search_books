@@ -1,5 +1,5 @@
 .share{
-  background-color: #ffffad;
+  background-color: $subColor;
   height: 100%;
   width: 60%;
   margin: 0 auto;
@@ -7,7 +7,7 @@
     text-align: center;
     font-size: 40px;
     padding: 20px;
-    color: #32cd3e;
+    color: $mainColor;
   }
   .field{
     width: 100%;
@@ -17,12 +17,12 @@
       font-weight: bold;
       margin-top: 5px;
       .share__name{
-        color: #32cd3e;
+        color: $mainColor;
       }
     }
     .field__image{
       font-size: 11px;
-      color: #888888;
+      color: $fontSub;
     }
     .name__text{
       height: 30px;
@@ -48,7 +48,7 @@
     }
   }
   .border{
-    border-bottom: 1px solid #32cd3e;
+    border-bottom: 1px solid $mainColor;
   }
   .submit{
     height: 48px;
@@ -64,7 +64,7 @@
       left: 0px;
       right: 0px;
       margin: 0 auto;
-      color: #32cd3e;
+      color: $mainColor;
     }
   }
 }
